@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text_item_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryBlue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"/>
+
+    <EditText
+        android:id="@+id/edit_item_value"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_item_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="monospace"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/edit_auto_item_product"
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:hint="@string/item"
+        android:backgroundTint="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/save_blue"/>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/delete_blue"/>
+
+</LinearLayout>

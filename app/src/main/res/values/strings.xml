@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Smart List</string>
+    <string name="total">Total: %1$d %2$s</string>
+    <string name="price">Price</string>
+    <string name="item">Item</string>
+    <string name="settings">Settings</string>
+    <string name="currency">Currency</string>
+    <string name="currency_status">Change the currency of Smart List</string>
+    <string name="recommendations">Smart Recommendations</string>
+    <string name="recommendations_status">Give me suggestions when I type an product into the list</string>
+    <string name="fill">Smart Fill</string>
+    <string name="fill_status">When the price field is empty, type in the price automatically</string>
+    <string name="color">Color</string>
+    <string name="color_status">Change the colors of Smart List</string>
+    <string name="excel">Export Excel</string>
+    <string name="excel_status">Export my list as an Microsoft Excel Document which I can find in Internal Storage in the folder Smart List</string>
+    <string name="fill_limit">Set the limit of Smart Fill</string>
+    <string name="fill_aware">Higher limit means worse performance</string>
+    <string name="limit">Limit</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.akitektuo.smartlist.activity.ListActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_list_header"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryBlue"
+        android:elevation="4dp"
+        android:layout_height="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_settings"
+            android:layout_margin="10dp"
+            android:background="@drawable/settings_white"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <Button
+            android:id="@+id/button_delete_all"
+            android:layout_margin="10dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/delete_white"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:padding="16dp"
+        android:id="@+id/list_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:layout_above="@+id/text_result"
+        android:layout_below="@+id/layout_list_header"
+        android:divider="@null"
+        android:clipToPadding="false"
+        android:scrollingCache="false"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryBlue"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:text="@string/total"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
