@@ -82,8 +82,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void deleteAllItems() {
-        handler.post(new Runnable() {
-            public void run() {
+        handler.post(()-> {
                 for (int i = 1; i < database.getListNumberNew(); i++) {
                     database.deleteList(database.getWritableDatabase(), i);
                 }
@@ -98,13 +97,9 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
                 AlertDialog.Builder builderDelete = new AlertDialog.Builder(this);
                 builderDelete.setTitle("Delete All Items");
                 builderDelete.setMessage("Are you sure you want to delete all items?");
-                builderDelete.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+                builderDelete.setPositiveButton("Delete", (dialogInterface,i) -> {
                         deleteAllItems();
-                        new Handler().postDelayed(new Runnable(){
-                            @Override
-                            public void run() {
+                        new Handler().postDelayed(()->{
                                 refreshList(getBaseContext());
                             }
                         }, 500);
